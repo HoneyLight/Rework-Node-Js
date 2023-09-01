@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid gainsboro;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;    
+}
+.logo a{
+    color: rgb(133, 37, 37);
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input{
+    padding: 8px 55px 8px 5px;
+}
+/* .svg{
+    display: block;
+} */
+.navigation .links{
+    height: 60px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+
+/* banner */
+.banner{
+    height: 600px;
+    width: 100%;
+    margin: auto;
+}
+.banner img{
+    height: 100%;
+    width: 100%;
+}
+/* section1 */
+.section1{
+    text-align: center;
+    margin: 2rem 0;
+}
+.subsec1{
+    width: 90%;
+    margin: auto
+}
+.shop{
+    margin-top: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-around; 
+}
+
+.section2{
+    height: 400px;
+    width: 100%;
+}
+.section2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.section3{
+    width: 100%;
+    height: 600px;
+    margin: 4rem 0;
+}
+.fall{
+    width: 85%;
+    margin: auto;
+}
+.fall h2{
+    text-align: center;
+}
+.decor-shop{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+.decor-shop .item img{
+    width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.item button{
+    padding: 4px 7px;
+    /* display: flex;
+    justify-content: center; */
+}
+.item button a{
+    text-decoration: none;
+    text-align: center;
+}
+
+/* footer */
+.footer1{
+    height: 200px;
+    width: 100%;
+    background-image: url(./image/needhelp-bg-dt.svg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.footer1 h2{
+    font-size: 40px;
+    color: rgb(23, 23, 86);
+}
+.footer1 .help{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+.footer1 a{
+    text-decoration: none;
+    color: black;
+}
+.footer1 .reach{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    font-size: 20px;
+}
+/* .reach svg{
+    font-size: 10%;
+} */
+
