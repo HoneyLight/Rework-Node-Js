@@ -23,7 +23,7 @@ http.createServer(function(request, response){
     }
 }).listen(5000) ;
 console.log("App running on port http://localhost:5000");
-//this listen help to specify the port number the particular app is suppose to run on. the rule is when you want to run, you do from 3000 - 5000 and you'll still heck well to know the numbers in between this 3000-5000 to run with eg if you have a react page running, you cant run your app on 3000 cos react runs on that.
+//this listen help to specify the port number the particular app is suppose to run on. the rule is when you want to run, you do from 3000 to above and you'll still check well to know the numbers in between this port numbers to run with eg if you have a react page running, you cant run your app on 3000 cos react runs on that.
 //NOTE: there is no time you should create a server that does not respond back to something; ensure that there is something you are returning even if its an error, ensure to respond the error.
 // assign: learn all the http error codes.
 
@@ -34,3 +34,15 @@ console.log("App running on port http://localhost:5000");
 // note that if you use response.write() and not use the response.end(), youll make the browser to just keep running and running expecting more content without ending. note: you can have more than one response.write() but you can only have one response.end().
 
 // assignment: design home page and one more of worldmarket.com site.
+
+http.createServer(function(req,res){
+    if(req.method == 'GET'){
+        if(req.url == "/"){
+            res.writeHead(200,{'content-type': 'application/json'})
+            res.end('{"name": "234"}')
+        }
+        if(req.url == '/images/a.png'){
+            // this is for adding images, you'll write the if statement for each image and import it but this is cumbersome that's why we need 'EXPRESS'.
+        }
+    }
+}).listen(6000)
